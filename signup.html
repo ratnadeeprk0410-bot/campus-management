@@ -16,8 +16,15 @@
  
     <form>
       <div class="field">
-        <input type="role" required />
-        <label>Student/Faculty/Admin</label>
+        <div class="dropdown-container">
+          <label for="resource"></label>
+            <select id="resource" name="resource">
+               <option value="">-- Choose Role --</option>
+               <option value="class">Student</option>
+               <option value="hall">Adults</option>
+               <option value="faculty">Faculty</option>
+            </select>
+      </div>
       </div>
       <div class="field">
         <input type="email" required />
@@ -47,4 +54,5 @@
 
 </body>
 </html>
+
 
